@@ -27,6 +27,8 @@ The pipeline streams the JSONL file to minimize memory footprint and outputs exa
 
 ## 🧠 Architecture Description
 
+![Pipeline Flow](./pipeline_funnel.svg)
+
 The solution employs a highly optimized, two-stage deterministic ranking architecture to maximize relevance and rigorously avoid honeypots.
 
 ### 1. Stage 1: Retrieval and Honeypot Defense
@@ -42,6 +44,16 @@ The top 1,500 candidates are subjected to a rigorous 100-point multi-dimensional
 - **Behavioral (15 pts):** Behavioral signals, factoring in notice period constraints, salary alignment, platform responsiveness, and work model (Bangalore/On-site).
 
 Finally, the score resolves deterministic ties to generate the pristine Top 100 submission, supplemented with transparent, candidate-specific reasoning notes.
+
+## 🧪 Testing and Reproducibility
+
+We have included a suite of unit tests to ensure our custom Honeypot and Contradiction logic is bulletproof and rigorously detects synthetic, anomalous, or chronologically impossible profiles. 
+
+To run the unit tests, execute:
+```bash
+python -m unittest tests/test_honeypot.py
+```
+This tests for critical edge cases such as claiming expert-level knowledge with zero duration, matching skills against foundation years of new startups, detecting timeline impossibilities (e.g., claiming GPT-4 experience years before release), and ensuring educational chronologies make logical sense.
 
 ## 📄 Submission Metadata
 
