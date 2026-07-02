@@ -1,7 +1,7 @@
 # [Redrob Rankers] — Redrob x H2S "India.Runs" Submission
 ### Track: Intelligent Candidate Discovery — Senior AI Engineer (Founding Team)
 
-**Team Leader:** Maitrii Madhurii
+
 **Repo:** https://github.com/Elle31416/redrob_challenge
 
 ---
