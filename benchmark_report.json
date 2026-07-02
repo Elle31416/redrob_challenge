@@ -1,0 +1,22 @@
+{
+  "input_candidate_count": 100000,
+  "performance": {
+    "wall_time_seconds": 12.082,
+    "peak_memory_mb": 95.5,
+    "stdout": "Starting candidate ranking pipeline using file: D:\\[PUB] India_runs_data_and_ai_challenge\\India_runs_data_and_ai_challenge\\candidates.jsonl\nScanned 100000 candidates.\nFiltered 10162 honeypots/anomaly records.\nFiltered 42273 low-relevance or out-of-bounds experience records.\nStage 1 retrieval pool: 1500 candidates.\nSuccessfully ranked and wrote top 100 candidates to ./submission.csv",
+    "returncode": 0
+  },
+  "output_quality": {
+    "output_row_count": 100,
+    "unique_candidate_ids": 100,
+    "has_duplicates": false,
+    "score_min": 60.56,
+    "score_max": 78.83,
+    "score_mean": 65.914,
+    "score_median": 64.591,
+    "score_stdev": 4.294,
+    "reasoning_avg_word_count": 29.2,
+    "reasoning_min_word_count": 24,
+    "rows_missing_reasoning": 0
+  }
+}
